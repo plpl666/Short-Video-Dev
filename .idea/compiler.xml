@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="videos_dev_common" />
+        <module name="videos_dev_mapper" />
+        <module name="videos_dev_mini_api" />
+        <module name="videos_dev_pojo" />
+        <module name="videos_dev_service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="videos_dev" target="1.8" />
+      <module name="videos_dev_common" target="1.8" />
+      <module name="videos_dev_mapper" target="1.8" />
+      <module name="videos_dev_mini_api" target="1.8" />
+      <module name="videos_dev_pojo" target="1.8" />
+      <module name="videos_dev_service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.imooc.mapper.CommentsExpandMapper" >
+  <resultMap id="BaseResultMap" type="com.imooc.pojo.vo.CommentsVO" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="video_id" property="videoId" jdbcType="VARCHAR" />
+    <result column="from_user_id" property="fromUserId" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="comment" property="comment" jdbcType="LONGVARCHAR" />
+    <result column="face_img" property="faceImg" jdbcType="VARCHAR" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+    <result column="toNickname" property="toNickname" jdbcType="VARCHAR" />
+  </resultMap>
+  
+  <select id="queryComments" resultMap="BaseResultMap" parameterType="String">
+    SELECT c.*, u.face_img, u.nickname, tu.nickname AS toNickname FROM comments c
+    LEFT JOIN users u ON c.from_user_id = u.id
+    LEFT JOIN users tu ON c.to_user_id = tu.id
+    WHERE c.video_id = #{videoId} ORDER BY c.create_time DESC
+  </select>
+  
+</mapper>

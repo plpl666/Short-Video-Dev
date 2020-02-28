@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/videos_dev.iml" filepath="$PROJECT_DIR$/videos_dev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videos_dev_common/videos_dev_common.iml" filepath="$PROJECT_DIR$/videos_dev_common/videos_dev_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videos_dev_mapper/videos_dev_mapper.iml" filepath="$PROJECT_DIR$/videos_dev_mapper/videos_dev_mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videos_dev_mini_api/videos_dev_mini_api.iml" filepath="$PROJECT_DIR$/videos_dev_mini_api/videos_dev_mini_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videos_dev_pojo/videos_dev_pojo.iml" filepath="$PROJECT_DIR$/videos_dev_pojo/videos_dev_pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videos_dev_service/videos_dev_service.iml" filepath="$PROJECT_DIR$/videos_dev_service/videos_dev_service.iml" />
+    </modules>
+  </component>
+</project>
